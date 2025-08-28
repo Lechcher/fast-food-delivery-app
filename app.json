@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "food_mobile_app",
-    "slug": "food_mobile_app",
+    "name": "Fast Food Delivery App",
+    "slug": "foodmobileapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -33,10 +33,25 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "fast-food-delivery-app",
+          "organization": "make-and-change"
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "a2d1984f-d7e1-4cb1-99d6-687b5ebffbf3"
+      }
+    },
+    "owner": "lechcher"
   }
 }
